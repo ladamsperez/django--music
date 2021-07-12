@@ -46,6 +46,8 @@ Your app should have the following URLs. You'll need to define view functions to
 
 ## Getting up and running
 
+To get this code locally, *fork* this repository to your GitHub account using the `fork` button.
+
 In your project directory, get a new Django project set up. Don't forget the `.` at the end of the command to `startproject`!
 
 ```
