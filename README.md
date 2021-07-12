@@ -16,7 +16,9 @@ Your Django app should allow you to do the following:
 - Edit an existing album
 - Delete an existing album
 
-Your app should have at least minimal styling. It's pretty practical to use a CSS library like [Tachyons](https://tachyons.io/) or [Picnic](https://picnicss.com/), though you can write custom CSS if you want to. Just remember that **for this assignment, functionality is a higher priority than styling**.
+Styling your app:
+- It's pretty practical to use a CSS library like [Tachyons](https://tachyons.io/), [Materialize](https://materializecss.com/) or [Picnic](https://picnicss.com/), though you can write custom CSS if you want to. 
+- Implement some *Semantic HTML* and either *Grid* or *Flexbox* from this week's videos to create a user-friendly and visually appealing project. 
 
 A good place to start is planning out your Album model and making sure you can make an Album object in the shell and/or admin. Make a couple of them. Then, you can start working on urls and views by make a homepage to list the existing albums.
 
