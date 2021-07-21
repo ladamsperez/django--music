@@ -6,7 +6,7 @@ from django.shortcuts import redirect
 
 
 
-def album_list(request, pk):
+def album_list(request):
     albums = Album.objects.filter(date_added__lte=timezone.now()).order_by('date_added')
     return render(request, 'beats/album_list.html', {'albums': albums})
 
@@ -39,4 +39,4 @@ def album_edit(request, pk):
             return redirect('album_detail', pk=album.pk)
     else:
         form = AlbumForm(instance=album)
-    return render(request, 'blog/album_edit.html', {'form': form})
+    return render(request, 'beats/album_edit.html', {'form': form})
