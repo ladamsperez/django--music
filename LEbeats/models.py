@@ -11,7 +11,7 @@ class Album(models.Model):
     date_added = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
-        self.published_date = timezone.now()
+        self.date_added = timezone.now()
         self.save()
 
     def __str__(self):
