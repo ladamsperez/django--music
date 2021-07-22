@@ -10,10 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import django_heroku
 import os
 from pathlib import Path
-import django_on_heroku
+# import django_heroku
+# import django_on_heroku
 
 
 
@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-by@seithj5yf0-m^5s&x5&zg49n+gf$wq51=0wdnmzjn9q*9_^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'heroku.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -135,8 +135,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-django_on_heroku.settings(locals())
+# # Activate Django-Heroku.
+# django_heroku.settings(locals())
+# django_on_heroku.settings(locals())
 
 

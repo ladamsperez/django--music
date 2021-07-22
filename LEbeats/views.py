@@ -14,7 +14,7 @@ def album_detail(request, pk):
     album = get_object_or_404(Album, pk=pk)
     return render(request, 'beats/album_detail.html', {'album': album})
 
-def album_new(request, pk):
+def album_new(request):
     if request.method == "POST":
         form = AlbumForm(request.POST)
         if form.is_valid():
