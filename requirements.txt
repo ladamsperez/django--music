@@ -4,3 +4,5 @@ django-extensions == "*"
 django-debug-toolbar == "*"
 django-environ == "*"
 gunicorn
+django-heroku
+django-on-heroku
