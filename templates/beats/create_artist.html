@@ -1,0 +1,12 @@
+{% extends 'beats/base.html' %}
+
+{% block content %}
+
+<form action="." method='POST' class='album-form'>{% csrf_token %}
+    <h3>add album</h3>
+    <br>
+    {{ form.as_p }}
+    <button type='submit' class='save btn btn-default'>Save</button>
+</form>
+
+{% endblock %}

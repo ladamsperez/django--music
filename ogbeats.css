@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #1afc5e;
+    background-color: #2bd55e;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -9,7 +9,7 @@
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-    color: #a33a3a;
+    color: #691313;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -22,15 +22,15 @@ h4 {
 }
 
 .date {
-    color: #070606;
+    color: #492424;
 }
 
 .save {
     float: right;
 }
 
-.post-form textarea,
-.post-form input {
+.album-form textarea,
+.album-form input {
     width: 100%;
 }
 
@@ -43,17 +43,17 @@ h4 {
     margin-right: 20px;
 }
 
-.post {
+.album {
     margin-bottom: 70px;
 }
 
-.post h2 a,
-.post h2 a:visited {
+.album h2 a,
+.album h2 a:visited {
     color: #000000;
 }
 
-.post > .date,
-.post > .actions {
+.album > .date,
+.album > .actions {
     float: right;
 }
 
@@ -68,3 +68,4 @@ h4 {
     color: #050404;
     background-color: #C25100;
 }
+

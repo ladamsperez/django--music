@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🔊L.E. BEATS🔊</title>
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/beats.css' %}">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by1">
+          <img src="https://cdn.wallpapersafari.com/84/22/Jz6bAs.gif" alt="Placeholder image">
+        </figure>
+      </div>
+    </div>
+    <div class="card-header-title is-overlay is-centered">
+         <span class="title is-primary">
+          <a href="/">🔊 🔊 🔊 L E  B E A T S 🔊 🔊 🔊</a></span>
+      </div>
+
+    <section class="hero is-medium">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div id="navbarBasicExample" class="has-navbar-fixed-top">
+              <div class="navbar-start">
+                 <a class="navbar-item">
+                  🔊BEATS🔊
+                  </a>
+                    <a class="navbar-item">
+                      Albums
+                    </a>
+                      <a class="navbar-item">
+                        {% if user.is_authenticated %}
+                      <a class="navbar-item"></a>
+                      <a href="{% url 'album_new' %}">
+                        {% include './icons/file-earmark-plus.svg' %}
+                      </a>
+                      </a>
+                    </a>
+                        {% endif %}
+              <div class="navbar-end">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </div>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+  

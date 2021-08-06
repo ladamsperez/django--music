@@ -1,0 +1,13 @@
+{% extends 'beats/base.html' %}
+
+{% block content %}
+<h5>
+    all titles by {{ artist }}
+    <br>
+</h5>
+{% for album in artist.albums.all %}
+    <article class= "album">
+        <h2><a href="{% url 'album_detail' pk=album.pk %}">{{ album }}</a></h2>
+    </article>
+{% endfor %}
+{% endblock %}
