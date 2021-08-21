@@ -15,10 +15,5 @@ class Migration(migrations.Migration):
             name='image',
             field=models.URLField(blank=True, null=True),
         ),
-        migrations.AlterField(
-            model_name='album',
-            name='year',
-            field=models.IntegerField(default=2021),
-            preserve_default=False,
-        ),
+
     ]

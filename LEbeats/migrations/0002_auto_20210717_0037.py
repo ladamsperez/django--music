@@ -27,6 +27,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='album',
             name='year',
-            field=models.DateTimeField(blank=True, null=True),
+            field=models.IntegerField(blank=True, null=True),
         ),
     ]
