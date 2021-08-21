@@ -3,6 +3,6 @@ Django~=2.2.4
 django-extensions = "*"
 django-debug-toolbar = "*"
 django-environ = "*"
-# gunicorn
-# django-heroku
-# django-on-heroku
+gunicorn
+psycopg2-binary
+django-heroku
